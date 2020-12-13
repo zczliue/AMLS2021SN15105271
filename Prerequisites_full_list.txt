@@ -1,0 +1,136 @@
+sys 3.6.7 (default, Nov  9 2020, 05:47:34) 
+[GCC 4.2.1 Compatible Apple LLVM 9.0.0 (clang-900.0.39.2)]
+re 2.2.1
+tensorflow 2.3.1
+distutils 3.6.7
+logging 0.5.1.2
+six 1.15.0
+ctypes 1.1.0
+_ctypes 1.1.0
+csv 1.0
+_csv 1.0
+numpy 1.18.5
+numpy.version 1.18.5
+numpy.core 1.18.5
+numpy.core._multiarray_umath 3.1
+platform 1.0.8
+numpy.lib 1.18.5
+numpy.linalg._umath_linalg b'0.1.5'
+zlib 1.0
+decimal 1.70
+_decimal 1.70
+argparse 1.1
+google.protobuf 3.13.0
+pkg_resources._vendor.appdirs 1.4.3
+pkg_resources.extern.appdirs 1.4.3
+pkg_resources._vendor.packaging 20.4
+pkg_resources._vendor.packaging.__about__ 20.4
+pkg_resources.extern.packaging 20.4
+pkg_resources._vendor.pyparsing 2.2.1
+pkg_resources.extern.pyparsing 2.2.1
+tensorflow.python.client.pywrap_tf_session 2.3.1
+wrapt 1.12.1
+tensorflow.python.framework.versions 2.3.1
+ctypes.macholib 1.0
+json 2.0.9
+opt_einsum v3.3.0
+astunparse 1.6.3
+termcolor (1, 1, 0)
+tensorflow.python.keras 2.4.0
+h5py 2.10.0
+h5py.version 2.10.0
+tarfile 0.9.0
+urllib.request 3.6
+ipaddress 1.0
+requests 2.24.0
+urllib3 1.25.11
+urllib3.packages.six 1.12.0
+urllib3._version 1.25.11
+chardet 3.0.4
+chardet.version 3.0.4
+requests.__version__ 2.24.0
+requests.utils 2.24.0
+certifi 2020.11.08
+requests.packages.urllib3 1.25.11
+requests.packages.urllib3.packages.six 1.12.0
+requests.packages.urllib3._version 1.25.11
+idna 2.10
+idna.package_data 2.10
+idna.idnadata 13.0.0
+requests.packages.idna 2.10
+requests.packages.idna.package_data 2.10
+requests.packages.idna.idnadata 13.0.0
+requests.packages.chardet 3.0.4
+requests.packages.chardet.version 3.0.4
+scipy 1.5.4
+scipy.version 1.5.4
+scipy._lib._uarray 0.5.1+49.g4c3f1d7.scipy
+pandas 1.1.4
+pytz 2020.4
+dateutil 2.8.1
+dateutil._version 2.8.1
+yaml 5.3.1
+xml.sax.handler 2.0beta
+unittest.mock 1.0
+tensorflow._api.v2.compat.v1 2.3.1
+tensorflow._api.v2.compat.v1.compat.v1 2.3.1
+tensorflow._api.v2.compat.v1.version 2.3.1
+tensorflow.python.keras.api.keras 2.4.0
+keras_preprocessing 1.1.2
+PIL 8.0.1
+PIL._version 8.0.1
+PIL.Image 8.0.1
+xml.etree.ElementTree 1.3.0
+scipy.ndimage 2.0
+scipy.special.specfun b'$Revision: $'
+scipy.linalg._fblas b'$Revision: $'
+scipy.linalg._flapack b'$Revision: $'
+scipy.linalg._flinalg b'$Revision: $'
+tensorflow.python.keras.api._v1.keras 2.4.0
+tensorflow._api.v2.compat.v1.compat.v2 2.3.1
+tensorflow._api.v2.compat.v2 2.3.1
+tensorflow._api.v2.compat.v2.compat.v1 2.3.1
+tensorflow._api.v2.compat.v2.compat.v2 2.3.1
+tensorflow._api.v2.compat.v2.version 2.3.1
+tensorboard 2.3.0
+tensorboard.version 2.3.0
+tensorboard.compat.tensorflow_stub stub
+tensorflow.python.keras.api._v2.keras 2.4.0
+tensorflow._api.v2.version 2.3.1
+tensorflow.keras 2.4.0
+matplotlib 3.3.2
+pyparsing 2.4.7
+cycler 0.10.0
+kiwisolver 1.3.1
+keras 2.4.3
+sklearn 0.21.2
+sklearn.base 0.21.2
+sklearn.utils._joblib 0.17.0
+joblib 0.17.0
+joblib.externals.loky 2.9.0
+joblib.externals.cloudpickle 1.6.0
+scipy.sparse.linalg.isolve._iterative b'$Revision: $'
+scipy._lib.decorator 4.0.5
+scipy.sparse.linalg.eigen.arpack._arpack b'$Revision: $'
+cv2 4.4.0
+cv2.cv2 4.4.0
+dlib 19.21.0
+_dlib_pybind11 19.21.0
+scipy.optimize.minpack2 b'$Revision: $'
+scipy.optimize._lbfgsb b'$Revision: $'
+scipy.optimize._cobyla b'$Revision: $'
+scipy.optimize._slsqp b'$Revision: $'
+scipy.optimize._minpack  1.10 
+scipy.optimize.__nnls b'$Revision: $'
+scipy.integrate._odepack  1.9 
+scipy.integrate._quadpack  1.13 
+scipy.integrate._ode $Id$
+scipy.integrate.vode b'$Revision: $'
+scipy.integrate._dop b'$Revision: $'
+scipy.integrate.lsoda b'$Revision: $'
+scipy.interpolate._fitpack  1.7 
+scipy.interpolate.dfitpack b'$Revision: $'
+scipy.stats.statlib b'$Revision: $'
+scipy.stats.mvn b'$Revision: $'
+sklearn.externals._arff 2.4.0
+sklearn.datasets.svmlight_format 0.21.2
