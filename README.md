@@ -48,26 +48,31 @@ Explanation for the files stored in repository:
 
 
 ## DataSplitting
-The testbed defines 2 category:
-- Dataset A: celeba (5000 imgs) and cartoon_set (10000 imgs)
+The testbed defines 2 categories:
+- Category A: celeba (5000 imgs) and cartoon_set (10000 imgs)
   - This dataset is used as 0.75 train-test split and the train set is further applied with a 5-fold cross validation during grid search for each model. The test score returned is termed as a (pseudo) test score.
 
-- Dataset B: celeba_test (1000 imgs) and cartoon_set_test (2500 imgs)
+- Category B: celeba_test (1000 imgs) and cartoon_set_test (2500 imgs)
   - This dataset is used as the true test set to be predicted by the optimal models trained with Dataset A. The true test score will be compared with the pseudo test score to see if they aggree with each other.
   
-  
+
  
 
 ## UserGuide
 
-To use this testbed, download and run main.py, which contains 3 sections: 
+To use this testbed, 
+- load celeba, cartoon_set, celeba_test, cartoon_set_test under Datasets folder
+- run main.py 
+
+
+The main function contains 3 sections: 
 
 - Sec 1: Generate true test score with pretrained models
   - This section loads pretrained models with optimal parameter combinations for each model type (stored in <TaskNumber_pretrained> folder within each task), and then perform predictions on the true test Dataset B (celeba_test and cartoon_set_test).
   - Whether this section is commented out does not affect the coderun for the following 2 sections. The pretrained models will not be overwritten when the following 2 sections generate newly trained models.
   
 - Sec 2: Grid search and generate train, validate and (pseudo) test score 
-  - This section loads Dataset A (celeba and cartoon_set) and performs grid search CV on each model type. Generated plots, intermediate data pickles and newly trained models will be stored in <TaskNumber_res> folder within each task.
+  - This section loads Category A (celeba and cartoon_set) and performs grid search CV on each model type. Generated plots, intermediate data pickles and newly trained models will be stored in <TaskNumber_res> folder within each task.
   - The estimated runtime for each task is:
     - Task A1: 2h
     - Task A2: 2h
@@ -85,7 +90,7 @@ To use this testbed, download and run main.py, which contains 3 sections:
       - Para set 1: {'num_hidden_layer': 4, 'hidden_layer_activation' : ['relu','tanh','relu','tanh'],'dropout':[0.5,0.25,0.125,0.0625],'last_activation':'softmax'}
 
 - Sec 3: Generate true test score with re-trained models
-  - This section loads Dataset B (celeba_test and cartoon_set_test) and performs prediction with newly trained models generated in Sec 2. Intermediate data pickles are stored in <TaskNumber_res> folder within each task.
+  - This section loads Category B (celeba_test and cartoon_set_test) and performs prediction with newly trained models generated in Sec 2. Intermediate data pickles are stored in <TaskNumber_res> folder within each task.
  
 ## Prerequisites
   
