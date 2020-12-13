@@ -8,8 +8,8 @@ Module code: ELEC0134 Applied machine learning system 20/21 assignment
 - [Introduction](#Introduction)
 - [Files](#Files)
 - [DataSplitting](#DataSplitting)
-- [Prerequisites](#Prerequisites)
 - [UserGuide](#UserGuide)
+- [Prerequisites](#Prerequisites)
 
 
 ## Introduction
@@ -56,7 +56,37 @@ The testbed defines 2 category:
   - This dataset is used as the true test set to be predicted by the optimal models trained with Dataset A. The true test score will be compared with the pseudo test score to see if they aggree with each other.
   
   
+ 
+
+## UserGuide
+
+To use this testbed, download and run main.py, which contains 3 sections: 
+
+- Sec 1: Generate true test score with pretrained models
+  - This section loads pretrained models with optimal parameter combinations for each model type (stored in <TaskNumber_pretrained> folder within each task), and then perform predictions on the true test Dataset B (celeba_test and cartoon_set_test).
+  - Whether this section is commented out does not affect the coderun for the following 2 sections. The pretrained models will not be overwritten when the following 2 sections generate newly trained models.
   
+- Sec 2: Grid search and generate train, validate and (pseudo) test score 
+  - This section loads Dataset A (celeba and cartoon_set) and performs grid search CV on each model type. Generated plots, intermediate data pickles and newly trained models will be stored in <TaskNumber_res> folder within each task.
+  - The estimated runtime for each task is:
+    - Task A1: 2h
+    - Task A2: 2h
+    - Task B1: 10h
+    - Task B2: 10h (the majority of runtime is spent on preprocessing the image)
+     
+  - Alternatively, the user may also change grid search parameter range by changing the header of <TaskNumber_functions_all.py> under each task folder. The current search range is same for all 4 tasks, given as:
+
+    - Logistic Regression: 'solver':[ 'saga'], 'penalty':['l1', 'l2'], 'C':[1e-4, 1e-3, 1e-2, 1e-1, 1,10]
+    - SVM: 'kernel': ['rbf', 'linear'], 'C': [0.001, 0.01, 0.1, 1, 10], 'gamma': [1e-4, 1e-3, 1e-2, 1e-1]
+    - RF: 'n_estimators':[64, 128, 256, 512, 1024], 'max_depth':[64, 128, 256, 512, 1024]
+    - KNN: 'n_neighbors':[8,16,32,64,128]
+    - MLP: num_epochs = 50, batch_size = Num_train_samples/10
+      - Para set 0: {'num_hidden_layer': 3, 'hidden_layer_activation' : ['relu','tanh','relu'], 'dropout':[0.5,0.25,0.125], 'last_activation':'softmax'}
+      - Para set 1: {'num_hidden_layer': 4, 'hidden_layer_activation' : ['relu','tanh','relu','tanh'],'dropout':[0.5,0.25,0.125,0.0625],'last_activation':'softmax'}
+
+- Sec 3: Generate true test score with re-trained models
+  - This section loads Dataset B (celeba_test and cartoon_set_test) and performs prediction with newly trained models generated in Sec 2. Intermediate data pickles are stored in <TaskNumber_res> folder within each task.
+ 
 ## Prerequisites
   
 - Python 3.6.7
@@ -84,26 +114,5 @@ The testbed defines 2 category:
 - os
 
 Please also refer to Prerequisites_full_list.txt (./Prerequisites_full_list.txt) for full list of versions. 
-
-
-## UserGuide
-
-The main functionn mainly contains 3 sections: 
-
-- Generate true test score with pretrained models
-  - This section loads pretrained models with optimal parameter combinations for each model type (stored in TaskNumber_pretrained folder within each task), then read and predicts the true test dataset.
-  - Whether this section is commented out does not affect the following 2 sections. The pretrained models will not be overwritten when the following 2 sections generate newly trained models.
-  
-- Grid search and generate train, validate and (pseudo) test score 
-  - This section loads Dataset A (celeba and cartoon_set) and performs grid search CV on each model type. Generated plots and newly trained models will be stored in TaskNumber_res folder within each task.
-  - The estimated runtime for each task is:
-    - Task A1: 2h
-    - Task A2: 2h
-    - Task B1: 10h
-    - Task B2: 10h (the majority of runtime is spent on preprocessing the image)
-    
-- Generate true test score with re-trained models
-
-
 
 
