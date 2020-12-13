@@ -86,4 +86,24 @@ The testbed defines 2 category:
 Please also refer to Prerequisites_full_list.txt (./Prerequisites_full_list.txt) for full list of versions. 
 
 
+## UserGuide
+
+The main functionn mainly contains 3 sections: 
+
+- Generate true test score with pretrained models
+  - This section loads pretrained models with optimal parameter combinations for each model type (stored in TaskNumber_pretrained folder within each task), then read and predicts the true test dataset.
+  - Whether this section is commented out does not affect the following 2 sections. The pretrained models will not be overwritten when the following 2 sections generate newly trained models.
+  
+- Grid search and generate train, validate and (pseudo) test score 
+  - This section loads Dataset A (celeba and cartoon_set) and performs grid search CV on each model type. Generated plots and newly trained models will be stored in TaskNumber_res folder within each task.
+  - The estimated runtime for each task is:
+    - Task A1: 2h
+    - Task A2: 2h
+    - Task B1: 10h
+    - Task B2: 10h (the majority of runtime is spent on preprocessing the image)
+    
+- Generate true test score with re-trained models
+
+
+
 
