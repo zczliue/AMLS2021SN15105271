@@ -63,6 +63,7 @@ The testbed defines 2 category:
 - Mac OS Sierra 10.12.6
 - tensorflow 2.3.1
 - tensorflow.python.keras 2.4.0
+- csv 1.0
 - keras_preprocessing 1.1.2
 - numpy 1.18.5
 - scipy 1.5.4
