@@ -70,6 +70,11 @@ The main function contains 3 sections:
 - Sec 1: Generate true test score with pretrained models
   - This section loads pretrained models with optimal parameter combinations for each model type (stored in <TaskNumber_pretrained> folder within each task), and then perform predictions on the true test Dataset B (celeba_test and cartoon_set_test).
   - Whether this section is commented out does not affect the coderun for the following 2 sections. The pretrained models will not be overwritten when the following 2 sections generate newly trained models.
+   - The estimated runtime for each task is:
+    - Task A1: 39 sec
+    - Task A2: 37 sec
+    - Task B1: 337 sec
+    - Task B2: 6156 sec
   
 - Sec 2: Grid search and generate train, validate and (pseudo) test score 
   - This section loads Category A (celeba and cartoon_set) and performs grid search CV on each model type. Generated plots, intermediate data pickles and newly trained models will be stored in <TaskNumber_res> folder within each task.
