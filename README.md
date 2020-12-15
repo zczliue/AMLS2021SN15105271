@@ -79,10 +79,10 @@ The main function contains 3 sections:
 - Sec 2: Grid search and generate train, validate and (pseudo) test score 
   - This section loads Category A (celeba and cartoon_set) and performs grid search CV on each model type. Generated plots, intermediate data pickles and newly trained models will be stored in <TaskNumber_res> folder within each task.
   - The estimated runtime for each task is:
-    - Task A1: 2h
-    - Task A2: 2h
-    - Task B1: 10h
-    - Task B2: 10h (the majority of runtime is spent on preprocessing the image)
+    - Task A1: 4261 sec 
+    - Task A2: 3748 sec
+    - Task B1: 22044 sec
+    - Task B2: 23703 sec (the majority of runtime is spent on preprocessing the image)
      
   - Alternatively, the user may also change grid search parameter range by changing the header of <TaskNumber_functions_all.py> under each task folder. The current search range is same for all 4 tasks, given as:
 
@@ -90,7 +90,7 @@ The main function contains 3 sections:
     - SVM: 'kernel': ['rbf', 'linear'], 'C': [0.001, 0.01, 0.1, 1, 10], 'gamma': [1e-4, 1e-3, 1e-2, 1e-1]
     - RF: 'n_estimators':[64, 128, 256, 512, 1024], 'max_depth':[64, 128, 256, 512, 1024]
     - KNN: 'n_neighbors':[8,16,32,64,128]
-    - MLP: num_epochs = 50, batch_size = Num_train_samples/10
+    - MLP: num_epochs = 20, batch_size = Num_train_samples/10
       - Para set 0: {'num_hidden_layer': 3, 'hidden_layer_activation' : ['relu','tanh','relu'], 'dropout':[0.5,0.25,0.125], 'last_activation':'softmax'}
       - Para set 1: {'num_hidden_layer': 4, 'hidden_layer_activation' : ['relu','tanh','relu','tanh'],'dropout':[0.5,0.25,0.125,0.0625],'last_activation':'softmax'}
 
