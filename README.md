@@ -2,8 +2,6 @@
 
 Student ID: 15105271  
 
-Mres Connected Electronic and Photonic Systems
-
 Module code: ELEC0134 Applied machine learning system 20/21 assignment  
 
 ```diff
