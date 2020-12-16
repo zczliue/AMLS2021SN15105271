@@ -96,7 +96,7 @@ The main function contains 3 sections:
       - Task B1: 337 sec
       - Task B2: 6156 sec
 ```diff
-    - This entire section can be commented out without affecting the coderun of the next 2 sections. Please skip this section if any pretrained model is corrupted due to improper LFS upload. 
+- The entire Section 1 can be commented out without affecting the coderun of the next 2 sections. Please skip this section if any pretrained model is corrupted due to improper LFS upload. 
  ```
  
 - Sec 2: Grid search and generate train, validate and (pseudo) test score 
