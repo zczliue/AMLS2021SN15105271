@@ -120,9 +120,8 @@ The main function contains 3 sections:
  
 ## Prerequisites
 
-```diff
-- Git LFS
-```
+
+- **Git LFS**
 - Python 3.6.7
 - Mac OS Sierra 10.12.6
 - tensorflow 2.3.1
@@ -147,6 +146,6 @@ The main function contains 3 sections:
 - time
 - os
 
-Please also refer to Prerequisites_full_list.txt (./Prerequisites_full_list.txt) for full list of package versions. 
+Please also refer to [Prerequisites_full_list.txt](./Prerequisites_full_list.txt) for full list of package versions. 
 
 
