@@ -72,8 +72,14 @@ def main():
     print_module_version()
     print()
 
+    
+    
 
     #===========================================================================================================
+    # Use pretrained models to generate test results on <celeba> and <cartoon_set_test>
+    # The entire Section 1 can be commented out without affecting the coderun of the next 2 sections. 
+    # Please skip this section if any pretrained model is corrupted due to improper LFS upload. 
+    #
     print()
     print('#------------------------------Sec 1. Generate true test score with pretrained models--------------------------------')
     bulk_runtime_task['true_test_with_pretrained'] = {}
