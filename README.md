@@ -119,7 +119,10 @@ The main function contains 3 sections:
   - This section loads Category B (celeba_test and cartoon_set_test) and performs prediction with newly trained models generated in Sec 2. Intermediate data pickles are stored in <TaskNumber_res> folder within each task.
  
 ## Prerequisites
-  
+
+```diff
+- Git LFS
+```
 - Python 3.6.7
 - Mac OS Sierra 10.12.6
 - tensorflow 2.3.1
@@ -144,6 +147,6 @@ The main function contains 3 sections:
 - time
 - os
 
-Please also refer to Prerequisites_full_list.txt (./Prerequisites_full_list.txt) for full list of versions. 
+Please also refer to Prerequisites_full_list.txt (./Prerequisites_full_list.txt) for full list of package versions. 
 
 
