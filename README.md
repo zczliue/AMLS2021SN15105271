@@ -112,7 +112,7 @@ The main function contains 3 sections:
 
     - Logistic Regression: 'solver':[ 'saga'], 'penalty':['l1', 'l2'], 'C':[1e-4, 1e-3, 1e-2, 1e-1, 1,10]
     - SVM: 'kernel': ['rbf', 'linear'], 'C': [0.001, 0.01, 0.1, 1, 10], 'gamma': [1e-4, 1e-3, 1e-2, 1e-1]
-    - RF: 'n_estimators':[64, 128, 256, 512, 1024], 'max_depth':[64, 128, 256, 512, 1024]
+    - RF: 'n_estimators':[64, 128, 256, 512, 1024], 'max_depth':[4, 8, 16, 32, 64]
     - KNN: 'n_neighbors':[8,16,32,64,128]
     - MLP: num_epochs = 20, batch_size = Num_train_samples/10
       - Para set 0: {'num_hidden_layer': 3, 'hidden_layer_activation' : ['relu','tanh','relu'], 'dropout':[0.5,0.25,0.125], 'last_activation':'softmax'}
