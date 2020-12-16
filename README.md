@@ -71,7 +71,19 @@ The testbed defines 2 categories:
 
 ## UserGuide
 
+
+```diff
+- This repository uses [Git LFS](https://git-lfs.github.com) to handle larger files such as pretrained models
+- It must be cloned with Git lfs installed via command line 
+    git clone https://github.com/zczliue/AMLS_20-21_SN15105271.git
+- or 
+    git lfs clone https://github.com/zczliue/AMLS_20-21_SN15105271.git
+- Otherwise the models will not be correctly downloaded
+```
+
 To use this testbed, 
+
+- install Git LFS and clone via command line
 - load celeba, cartoon_set, celeba_test, cartoon_set_test under Datasets folder
 - run main.py 
 
