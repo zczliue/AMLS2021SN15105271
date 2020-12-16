@@ -6,7 +6,10 @@ Mres Connected Electronic and Photonic Systems
 
 Module code: ELEC0134 Applied machine learning system 20/21 assignment  
 
-<mark>Marked text</mark>
+```diff
++ this text is highlighted in green
+- this text is highlighted in red
+```
 
 ## Table of Contents 
 - [Introduction](#Introduction)
