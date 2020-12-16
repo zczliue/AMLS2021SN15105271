@@ -7,8 +7,11 @@ Mres Connected Electronic and Photonic Systems
 Module code: ELEC0134 Applied machine learning system 20/21 assignment  
 
 ```diff
-- This repository uses [Git LFS](https://git-lfs.github.com/) to handle larger files (pretrained models)
-- And therefore it must be cloned via command line git clone <remote>
+- This repository uses [Git LFS](https://git-lfs.github.com) to handle larger files such as pretrained models
+- It must be cloned with Git lfs installed via command line 
+    git clone <remote>
+- or 
+    git lfs clone <remote>
 - Otherwise the models will not be correctly downloaded
 ```
 
