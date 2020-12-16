@@ -76,7 +76,7 @@ def main():
     
 
     #===========================================================================================================
-    # Use pretrained models to generate test results on <celeba> and <cartoon_set_test>
+    # Use pretrained models to generate test results on <celeba_test> and <cartoon_set_test>
     # The entire Section 1 can be commented out without affecting the coderun of the next 2 sections. 
     # Please skip this section if any pretrained model is corrupted due to improper LFS upload. 
     #
