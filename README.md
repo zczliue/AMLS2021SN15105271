@@ -48,7 +48,7 @@ Explanation for the files stored in repository:
   
  - A2 and B1 (folder): same as A1 folder
  
- - [B2](./B2) (folder):
+ - [B2](./B2) (folder) additional :
     - B2_preprocess.py: function file that extract dominant rgb value for eye area. Therefore instead of using 68 features,  B2_functions_all.py uses 3 values of rgb as input features.
 
 - main_results_Jupyter.pdf: A Jupyter report printing the results obtained 
