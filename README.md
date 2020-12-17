@@ -8,7 +8,7 @@ Module code: ELEC0134 Applied machine learning system 20/21 assignment
 - This repository uses [Git LFS](https://git-lfs.github.com) to handle larger files such as pretrained models
 
 - It must be cloned with Git lfs installed via command line 
-    git lfs clone https://github.com/zczliue/AMLS_20-21_SN15105271.git
+    git lfs clone https://github.com/zczliue/AMLS2021SN15105271.git
     
 - Otherwise, data will not be correctly downloaded using other methods (such as directly clone from browser or with git clone)
 ```
@@ -74,7 +74,7 @@ The testbed defines 2 categories:
 - This repository uses [Git LFS](https://git-lfs.github.com) to handle larger files such as pretrained models
 
 - It must be cloned with Git lfs installed via command line 
-    git lfs clone https://github.com/zczliue/AMLS_20-21_SN15105271.git
+    git lfs clone https://github.com/zczliue/AMLS2021SN15105271.git
     
 - Otherwise, data will not be correctly downloaded using other methods (such as directly clone from browser or with git clone)
 ```
