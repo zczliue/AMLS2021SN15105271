@@ -62,7 +62,7 @@ The testbed defines 2 categories:
   - This dataset is used as 0.75 train-test split and the train set is further applied with a 5-fold cross validation during grid search for each model. The test score returned is termed as a (pseudo) test score.
 
 - Category B: celeba_test (1000 imgs) and cartoon_set_test (2500 imgs)
-  - This dataset is used as the true test set to be predicted by the optimal models trained with Dataset A. The true test score will be compared with the pseudo test score to see if they aggree with each other.
+  - This dataset is used as the true test set to be predicted by the optimal models trained with Dataset A. The true test score will be compared with the pseudo test score to see if they agree with each other.
   
 
  
