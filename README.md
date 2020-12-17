@@ -44,7 +44,7 @@ Explanation for the files stored in repository:
   - A1_functions_all.py: function file that carries out grid search, training, testing and image plots
   - A1_extract_landmarks.py: function file that adapted from AMLS lab2 to read and extract 68 facial landmarks and labels with dlib library
   - TaskA1_pretrained (folder): Stores pretrained models.
-  - TaskA1_res (folder): This folder is empty (or none) by default and will be used to store generated plots, extracted landamrks pickles, re-trained models as the testbed runs the code. 
+  - TaskA1_res (folder): This folder is none by default and will be created during coderun to store generated plots, extracted landamrks pickles, re-trained models. 
   
  - A2 and B1 (folder): same as A1 folder
  
