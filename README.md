@@ -81,9 +81,9 @@ The testbed defines 2 categories:
 
 To use this testbed, 
 
-- install Git LFS and clone via command line
+- install Git LFS and clone via **git lfs clone url**
 - load celeba, cartoon_set, celeba_test, cartoon_set_test under Datasets folder
-- run main.py 
+- run python3 main.py 
 
 
 The main function contains 3 sections: 
