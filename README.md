@@ -39,7 +39,7 @@ Based on grid search scores, the testbed will select the optimal parameter combi
 
 
 ## Files
-Explanation for the files stored in repository:
+Explanation for the files stored in repository main branch:
 - [A1](./A1) (folder): 
   - A1_functions_all.py: function file that carries out grid search, training, testing and image plots
   - A1_extract_landmarks.py: function file that adapted from AMLS lab2 to read and extract 68 facial landmarks and labels with dlib library
@@ -51,7 +51,11 @@ Explanation for the files stored in repository:
  - [B2](./B2) (folder) additional :
     - B2_preprocess.py: function file that extract dominant rgb value for eye area. Therefore instead of using 68 features,  B2_functions_all.py uses 3 values of rgb as input features.
 
-- main_results_Jupyter.pdf: A Jupyter report printing the results obtained 
+- [main_results_Jupyter.pdf](./main_results_Jupyter.pdf): A Jupyter report printing the results obtained 
+
+- [main.py](./main.py): main function to print result summary
+
+- [Prerequisites_full_list.txt](./Prerequisites_full_list.txt) : List of all packages and versions required print by sys and pycharm
 
 - Datasets: empty by default
 
@@ -102,6 +106,9 @@ The main function contains 3 sections:
  
 - Sec 2: Grid search and generate train, validate and (pseudo) test score 
   - This section loads Category A (celeba and cartoon_set) and performs grid search CV on each model type. Generated plots, intermediate data pickles and newly trained models will be stored in <TaskNumber_res> folder within each task.
+  
+  - For each task, the main function calls TaskNumber_functions_all.py to go through the 5 model types in sequence. Then, TaskNumber_functions_all.py calls TaskNumber_extract_landmarks.py to extract features and return to TaskNumber_functions_all.py
+  
   - The estimated runtime for each task is:
     - Task A1: 4261 sec 
     - Task A2: 3748 sec
