@@ -4,6 +4,8 @@ Student ID: 15105271
 
 Module code: ELEC0134 Applied machine learning system 20/21 assignment  
 
+email address: zczliue@ucl.ac.uk
+
 ```diff
 - This repository uses [Git LFS](https://git-lfs.github.com) to handle larger files such as pretrained models
 
