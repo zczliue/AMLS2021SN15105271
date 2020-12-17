@@ -511,7 +511,8 @@ def KNN_Grid_search_Prediction_CV(xtrain, ytrain, xtest, ytest, tuning_parameter
     
 
 
-#MLP models with dense network
+#Perform grid search on MLP models with dense network
+#grid_parameters: list defined in header than contains multiple dicts of MLP para set
 def Sequential_Prediction_GridSearch_CV(xtrain, ytrain, xtest, ytest, grid_parameters, cvfold, num_class, num_epochs, savepath):
     
     learning_curve_dict_all_models = {}
@@ -525,7 +526,7 @@ def Sequential_Prediction_GridSearch_CV(xtrain, ytrain, xtest, ytest, grid_param
     
     #the para combination index in search grid
     model_idx = 0
-    
+    #for each para set, construct dense network and apply CV, predict pesudo test score
     for model_parameters in grid_parameters:
         
         print()
@@ -552,7 +553,7 @@ def Sequential_Prediction_GridSearch_CV(xtrain, ytrain, xtest, ytest, grid_param
         
        
         
-    #find max acc value on pseudo test set and index
+    #find max acc value on pseudo test set and index. This gives the optimal para set.
     max_acc_value = max(acc_all_models)
     max_acc_value_index = acc_all_models.index(max_acc_value)
     
@@ -579,7 +580,7 @@ def Sequential_Prediction_GridSearch_CV(xtrain, ytrain, xtest, ytest, grid_param
     
     
     
-# In this function we compute MLP model for each fold and average out the results 
+# In this function we construct MLP model for each para set in grid list, compute each fold and average out the results 
 
 def Sequential_Prediction_CV(xtrain, ytrain, xtest, ytest, model_parameters, cvfold, num_class, num_epochs, model_idx, savepath):
     
