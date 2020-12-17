@@ -10,7 +10,7 @@ Module code: ELEC0134 Applied machine learning system 20/21 assignment
 - It must be cloned with Git lfs installed via command line 
     git lfs clone https://github.com/zczliue/AMLS2021SN15105271.git
     
-- Otherwise, data will not be correctly downloaded using other methods (such as directly clone from browser or with git clone)
+- Otherwise, files may be corrupted if using other methods (such as directly clone from browser or git clone in command line)
 ```
 
 ## Table of Contents 
@@ -76,7 +76,7 @@ The testbed defines 2 categories:
 - It must be cloned with Git lfs installed via command line 
     git lfs clone https://github.com/zczliue/AMLS2021SN15105271.git
     
-- Otherwise, data will not be correctly downloaded using other methods (such as directly clone from browser or with git clone)
+- Otherwise, files may be corrupted if using other methods (such as directly clone from browser or git clone in command line)
 ```
 
 To use this testbed, 
