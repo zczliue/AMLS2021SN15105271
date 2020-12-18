@@ -58,13 +58,13 @@ Explanation for the files stored in repository main branch:
 
 
 - [main.py](./main.py): main function to print result summary, contains 3 sections (details in [UserGuide](#UserGuide)): 
-    - load pretrained models and generate true test results with celeba_test and cartoon_set_test
-    - Read from training set celeba and cartoon_set to perform grid search and train new models
-    - Generate true test scores with celeba_test and cartoon_set_test using newly trained models in Section 2
+    - load pretrained models and generate true test results with **celeba_test** and **cartoon_set_test**
+    - Read from training set **celeba** and **cartoon_set** to perform grid search and train new models
+    - Generate true test scores with **celeba_test** and **cartoon_set_test** using newly trained models in Section 2
     
     
  - [main_results_Jupyter.pdf](./main_results_Jupyter.pdf): A Jupyter report printing the images, grid table and results. 
-    - Please note that it only contains the results from Section 2 and Section 3.  
+    - **Please note that it only contains the results from Section 2 and Section 3.**  
 
 - [Prerequisites_full_list.txt](./Prerequisites_full_list.txt) : List of all packages and versions required print by sys and pycharm
 
