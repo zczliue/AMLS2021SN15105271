@@ -13,6 +13,8 @@ email address: zczliue@ucl.ac.uk
     git lfs clone https://github.com/zczliue/AMLS2021SN15105271.git
     
 - Otherwise, files may be corrupted if using other methods (such as directly clone from browser or git clone in command line)
+
+- Please leave sufficient disk storage to run the code (otherwise img path will not be correctly read)
 ```
 
 ## Table of Contents 
@@ -89,7 +91,7 @@ To use this testbed,
 
 - install Git LFS and clone via **git lfs clone url**
 - load celeba, cartoon_set, celeba_test, cartoon_set_test under Datasets folder
-- run python3 main.py 
+- in main branch, run python3 main.py 
 
 
 The main function contains 3 sections: 
