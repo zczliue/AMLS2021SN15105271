@@ -14,7 +14,7 @@ email address: zczliue@ucl.ac.uk
     
 - Otherwise, files may be corrupted if using other methods (such as directly clone from browser or git clone in command line)
 
-- Please leave sufficient disk storage to run the code (otherwise images may not be correctly read)
+- Please leave sufficient disk storage to run the code (otherwise PIL may report error when reading images)
 ```
 
 ## Table of Contents 
@@ -137,8 +137,11 @@ The main function contains 3 sections:
  
  ## ErrorHandling
  
- - Image.open() cannot identify image file:
-    - This error might arise from lack of disk storage when attempting to read the Datasets. 
+ - Insufficient disk storage: 
+    - img = pil_image.open(io.BytesIO(f.read())) 
+    - "cannot identify image file %r" % (filename if filename else fp) 
+    - PIL.UnidentifiedImageError: cannot identify image file <_io.BytesIO object at 0x13d45fa40>:
+        - These errors might arise from lack of disk storage when attempting to read the Datasets. 
     
  - Corruption of pretrained models
     - The entire Section 1 can be commented out without affecting the coderun of the next 2 sections. Please skip this section if any pretrained model is corrupted due to improper LFS management. 
