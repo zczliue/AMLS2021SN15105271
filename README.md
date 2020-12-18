@@ -14,7 +14,7 @@ email address: zczliue@ucl.ac.uk
     
 - Otherwise, files may be corrupted if using other methods (such as directly clone from browser or git clone in command line)
 
-- Please leave sufficient disk storage to run the code (otherwise img path will not be correctly read)
+- Please leave sufficient disk storage to run the code (otherwise images may not be correctly read)
 ```
 
 ## Table of Contents 
@@ -22,6 +22,7 @@ email address: zczliue@ucl.ac.uk
 - [Files](#Files)
 - [DataSplitting](#DataSplitting)
 - [UserGuide](#UserGuide)
+- [ErrorHandling](#ErrorHandling)
 - [Prerequisites](#Prerequisites)
 
 
@@ -105,7 +106,7 @@ The main function contains 3 sections:
       - Task B2: 6156 sec
 ```diff
 - The entire Section 1 can be commented out without affecting the coderun of the next 2 sections. 
-- Please skip this section if any pretrained model is corrupted due to improper LFS upload. 
+- Please skip this section if any pretrained model is corrupted due to improper LFS management. 
  ```
  
 - Sec 2: Grid search and generate train, validate and (pseudo) test score 
@@ -131,6 +132,19 @@ The main function contains 3 sections:
 
 - Sec 3: Generate true test score with re-trained models
   - This section loads Category B (celeba_test and cartoon_set_test) and performs prediction with newly trained models generated in Sec 2. Intermediate data pickles are stored in <TaskNumber_res> folder within each task.
+ 
+ 
+ 
+ ## ErrorHandling
+ 
+ - Image.open() cannot identify image file:
+    - This error might arise from lack of disk storage when attempting to read the Datasets. 
+    
+ - Corruption of pretrained models
+    - The entire Section 1 can be commented out without affecting the coderun of the next 2 sections. Please skip this section if any pretrained model is corrupted due to improper LFS management. 
+ 
+ 
+ 
  
 ## Prerequisites
 
